@@ -5,11 +5,21 @@ while(isNaN(n)){
     n = parseInt(prompt("Insira um número inteiro: "));
 }
 
-const fibonacci = [0, 1];
+let i = 0;
 
-for(let i = 2; i < n; i++){
-    fibonacci.push(fibonacci[i-1] + fibonacci[i - 2]);
+let fibonacci = [0, 1];
+
+function calc_fibonacci(fibonacci, n){
+    if(fibonacci.length >= n){
+        return fibonacci;
+    }
+    
+    fibonacci.push(fibonacci[fibonacci.length - 1] + fibonacci[fibonacci.length - 2]);
+
+    return calc_fibonacci(fibonacci, n);
 }
+
+fibonacci = calc_fibonacci(fibonacci, n);
 
 for(let i = 0; i < n; i++){
     console.log(`Fibonacci(${i}) = ${fibonacci[i]}`);
