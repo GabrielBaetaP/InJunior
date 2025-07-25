@@ -130,6 +130,11 @@ header{
     height: 200px;
     opacity: 1;
     border-radius: 10px;
+    transition: 0.5s ease;
+}
+
+.lista_hobbies li:hover{
+    transform: scale(1.1);
 }
 
 .lista_hobbies p{
@@ -137,6 +142,7 @@ header{
     justify-self: center;
     align-self: end;
     margin-top: 20px;
+
 }
 
 .top{
