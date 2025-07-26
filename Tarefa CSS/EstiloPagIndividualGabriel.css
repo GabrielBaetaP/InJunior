@@ -4,13 +4,13 @@ body{
     font-family: 'Alata', sans-serif;
     color: white;
     font-weight: 400;
-    line-height: 100%;
+    line-height: 1.5;
     letter-spacing: 0%;
 }
 
 img{
     margin-top: 5px;
-    margin-left: 7.5px;
+    margin-left: 5px;
     display: flex;
     width: 120px;
     height: 140px;
@@ -27,6 +27,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
 }
 
 .titulo p{
@@ -44,6 +46,7 @@ header{
     margin: 0;
     padding: 0;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .header_links a {
@@ -59,11 +62,13 @@ header{
 .sobre{
     background-color: rgb(6, 85, 168);
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 5%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
+    box-sizing: border-box;
+    flex-wrap: wrap;
 }
 
 .imagem {
@@ -96,17 +101,20 @@ header{
 }
 
 .curiosidades{
-    padding: 50px 0 150px 0;
+    padding: 50px 1% 150px 1%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
 }
 
 .hobbies{
     display: block;
-    width: 800px;
-    height: 200px;
-    margin-right: 20px;
+    width: 100%;
+    max-width: 770px;
+    height: auto;
+    margin-right: 2%;
 }
 
 .hobbies h3{
@@ -115,22 +123,24 @@ header{
 }
 
 .lista_hobbies ul{
-    height: 150px;
-    opacity: 1;
+    height: auto;
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .lista_hobbies li{
     background-color: rgb(6, 85, 168);
-    width: 150px;
+    width: 130px;
     height: 200px;
     opacity: 1;
     border-radius: 10px;
     transition: 0.5s ease;
+    flex-shrink: 0;
 }
 
 .lista_hobbies li:hover{
@@ -139,37 +149,39 @@ header{
 
 .lista_hobbies p{
     display: flex;
-    justify-self: center;
-    align-self: end;
-    margin-top: 20px;
-
+    justify-content: center; 
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .top{
     display: block;
-    width: 800px;
-    height: 200px;
-    margin-left: 20px;
+    width: 100%;
+    max-width: 770px;
+    height: auto;
+    margin-left: 2%;
 }
 
 .lista_top ol{
-    height: 150px;
-    opacity: 1;
+    height: auto;
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .lista_top li{
     background-color: rgb(6, 85, 168);
-    width: 150px;
+    width: 130px;
     height: 200px;
     opacity: 1;
     border-radius: 10px;
     position: relative;
     transition: 0.5s ease;
+    flex-shrink: 0;
 }
 
 .lista_top li:hover{
@@ -178,7 +190,7 @@ header{
 
 .rank{
     position: absolute; 
-    left: 7.5px;
+    left: 5px;
     background-color: rgb(1, 40, 80); 
     color: white;
     padding: 5px 10px;
@@ -189,9 +201,9 @@ header{
 
 .lista_top p{
     display: flex;
-    justify-self: center;
-    align-self: end;
-    margin-top: 20px;
+    justify-content: center; 
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .feedbacks{
@@ -264,12 +276,14 @@ input::placeholder{
 }
 
 footer{
-    padding: 14px 5%;
+    padding: 20px 5%;
     background-color: rgb(6, 85, 168);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px
 }
 
 .footer_links img{
@@ -294,4 +308,58 @@ footer{
 
 .footer_a:hover {
     color: white;
+}
+
+@media (max-width: 800px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    }
+
+    .titulo p {
+        font-size: 32px; 
+    }
+
+    .header_links ul {
+        justify-content: center; 
+        gap: 20px;
+    }
+    
+    .header_links {
+        font-size: 20px; 
+    }
+
+    .sobre {
+        flex-direction: column; 
+        gap: 40px; 
+        text-align: center; 
+    }
+
+    .imagem {
+        width: 200px; 
+        height: 200px;
+    }
+
+    .apresentacao {
+        max-width: 100%;
+    }
+
+    .curiosidades {
+        padding: 50px 5% 80px 5%;
+        text-align: center; 
+    }
+
+    .top h3, .hobbies h3{
+        justify-content: center;
+    }
+    
+    .feedbacks_texto {
+        font-size: 20px; 
+    }
+
+    footer {
+        flex-direction: column; 
+        justify-content: center; 
+    }
 }
