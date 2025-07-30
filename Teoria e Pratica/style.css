@@ -1,0 +1,15 @@
+.box{
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid black;
+}
+
+.accept{
+    background-color: green;
+    color: white;
+}
+
+.error{
+    background-color: red;
+    color: white;
+}
