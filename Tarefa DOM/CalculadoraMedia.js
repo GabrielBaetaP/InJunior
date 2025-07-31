@@ -38,6 +38,10 @@ function adicionarNota(){
 
 function calcularMedia(){
     let secao = document.querySelector(".resultado");
+    if(i-1 === 0){
+        alert("Não há números para ser calculado, insira uma nota.");
+        return;
+    }
     let result = nota/(i-1);
     secao.innerText = result.toFixed(2);
 }
