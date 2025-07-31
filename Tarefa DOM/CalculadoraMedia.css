@@ -32,6 +32,14 @@ body{
     height: 20px;
 }
 
+#adicionar{
+    transition: 0.7s ease;
+}
+
+#adicionar:hover{
+    transform: scale(1.1);
+}
+
 .notas{
     margin-top: 20px;
 }
@@ -43,6 +51,11 @@ body{
 #calcular{
     margin-top: 15px;
     width: 130px;
+    transition: 0.7s ease;
+}
+
+#calcular:hover{
+    transform: scale(1.1);
 }
 
 .calculado{
