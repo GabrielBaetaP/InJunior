@@ -1,0 +1,55 @@
+body{
+    background-color: blue;
+}
+
+.titulo{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-self: center;
+    font-weight: bold;
+}
+
+.box{
+    background-color: white;
+    width: 30%;
+    height: 40rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    
+    justify-self: center;
+    padding: 15px 15px;
+}
+
+.pesquisa{
+    margin-top: 20px;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    gap: 5px;
+    height: 20px;
+}
+
+.notas{
+    margin-top: 20px;
+}
+
+#display{
+    width: 99%;
+}
+
+#calcular{
+    margin-top: 15px;
+    width: 130px;
+}
+
+.calculado{
+    display: flex;
+    align-items: center;
+}
+
+.calculado .resultado{
+    margin-left: 3px;
+}
