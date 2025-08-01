@@ -99,6 +99,13 @@ main{
 
     line-height: 100%;
     letter-spacing: 0%;
+
+    transition: 0.7s ease;
+}
+
+#btn-adicionar:hover{
+    transform: scale(1.05);
+    background-color: rgb(23, 126, 76);
 }
 
 .produto{
