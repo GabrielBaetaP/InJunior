@@ -157,14 +157,14 @@ main{
     gap: 8px;
 }
 
-.card-produto .botoes{
+.botoes{
     display: flex;
     justify-content: end;
     gap: 10px;
     
 }
 
-.card-produto .botoes #btn-remover, .card-produto .botoes #btn-editar{
+.botoes .btn-remover, .botoes .btn-editar{
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -179,21 +179,21 @@ main{
     transition: 0.7s ease;
 }
 
-.card-produto .botoes #btn-remover{
+.card-produto .botoes .btn-remover{
     background-color: rgba(250, 6, 6, 1);
     
 }
 
-.card-produto .botoes #btn-remover:hover{
+.card-produto .botoes .btn-remover:hover{
     transform: scale(1.1);
     background-color: rgb(228, 4, 4);
 }
 
-.card-produto .botoes #btn-editar{
+.card-produto .botoes .btn-editar{
     background-color: rgba(36, 59, 152, 1);
 }
 
-.card-produto .botoes #btn-editar:hover{
+.card-produto .botoes .btn-editar:hover{
     transform: scale(1.1);
     background-color: rgb(30, 51, 133);
 }
@@ -209,7 +209,6 @@ main{
     height: auto;
     display: block;
 }
-
 
 
 .card-produto .informacoes{
@@ -277,6 +276,40 @@ main{
     justify-content: end;
 }
 
+.btn-paginacao{
+    grid-column: 1 / -1; 
+    border: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.num-pag, .num-pag-atual{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: 0;
+
+    padding: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: -0.2px;
+    color:black;
+}
+
+.num-pag-atual{
+    color: rgba(140, 191, 38, 1);
+}
+
+.num-pag:hover{
+    transform: scale(2);
+}
 
 footer{
     height: 180px;
