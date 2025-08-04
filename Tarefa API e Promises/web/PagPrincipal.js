@@ -85,7 +85,7 @@ function infos(produtos) {
     document.querySelectorAll('.btn-editar').forEach(botao => {
         botao.addEventListener('click', function() {
             const id = this.getAttribute("id");
-            window.location.href = "PagAdicionar.html?id=" + id; 
+            window.location.href = "PagEditar.html?id=" + id; 
         });
     });
 }
