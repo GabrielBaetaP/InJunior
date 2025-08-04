@@ -139,6 +139,8 @@ input {
     margin-bottom: 50px;
 
     cursor: pointer;
+
+    transition: 0.7s ease;
 }
 
 #criar .btn-texto{
@@ -156,6 +158,11 @@ input {
 
     display: flex;
     justify-content: center;
+}
+
+#criar:hover{
+    background-color: rgb(23, 126, 76);
+    transform: scale(1.1);
 }
 
 footer {
