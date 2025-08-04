@@ -58,7 +58,7 @@ function infos(produtos) {
                             </button>
                         </div>
                     </div>
-                    <img src="https://acdn-us.mitiendanube.com/stores/001/409/577/products/camisa-reserva-flamengo-adidas-branco-2022-2023-kit-2-crf-torcedor-masculino-11-8fc7ec252f417b940416553866558140-640-0.jpg">
+                    <img src="${produto.image}">
                 </div>
             
                 <div class="informacoes">
