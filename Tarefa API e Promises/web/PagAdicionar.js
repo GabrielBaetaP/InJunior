@@ -1,15 +1,16 @@
 async function insereProduto() {
 
     let nome = document.querySelector("#nome");
+    let preco = document.querySelector("#preco");
+    preco.value = preco.value.replace(",", ".");
     let imagem = document.querySelector("#image");
     let descricao = document.querySelector("#descricao");
-    let preco = document.querySelector("#preco");
     let categoria = document.querySelector("#categoria");
     let avaliacao = document.querySelector("#avaliacao");
-
+    avaliacao.value.replace(",", ".");
     let novo = {};
 
-    if (nome.value.trim() == "" || imagem.value.trim() == "" || descricao.value.trim() == "" || preco.value.trim() == "" || categoria.value.trim() == "" || avaliacao.value.trim() == ""){
+    if (nome.value.trim() == "" || preco.value.trim() == "" || imagem.value.trim() == "" || descricao.value.trim() == "" ||  categoria.value.trim() == "" || avaliacao.value.trim() == ""){
         alert("Todos os campos devem ser preenchidos com informações.")
         return
     }
