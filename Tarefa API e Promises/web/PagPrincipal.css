@@ -78,7 +78,7 @@ main{
     flex-direction: column;
 }
 
-#btn-adicionar{
+.botao{
     background-color: rgba(31, 155, 95, 1);
     width: auto;
     height: 100px;
@@ -89,22 +89,24 @@ main{
     border: 0;
     cursor: pointer;
     display: flex;
-
-    align-items: center;
     justify-content: center;
+    align-items: center;
 
+    text-decoration: none;
+
+    line-height: 100%;
+    letter-spacing: 0%;
+
+    background-color: rgba(31, 155, 95, 1);
     color: white;
     font-weight: 700;
     font-style: Bold;
     font-size: 40px;
 
-    line-height: 100%;
-    letter-spacing: 0%;
-
     transition: 0.7s ease;
 }
 
-#btn-adicionar:hover{
+.botao:hover{
     transform: scale(1.05);
     background-color: rgb(23, 126, 76);
 }
@@ -274,43 +276,6 @@ main{
     text-align: end;
     justify-content: end;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 footer{
