@@ -7,10 +7,12 @@ async function infos(id) {
 
         let nome = document.querySelector("#Nome");
         let preco = document.querySelector("#Preco");
+        preco.value = preco.value.replace(",", ".");
         let imagem = document.querySelector("#Imagem");
         let categoria = document.querySelector("#Categorias");
         let descricao = document.querySelector("#Descricao");
         let avaliacao = document.querySelector("#Avaliacao");
+        avaliacao.value.replace(",", ".");
 
         nome.placeholder = produto.name;
         imagem.placeholder = produto.image;
@@ -28,10 +30,12 @@ async function infos(id) {
 async function edit_produto(id) {
     let nome = document.querySelector("#Nome");
     let preco = document.querySelector("#Preco");
+    preco.value = preco.value.replace(",", ".");
     let imagem = document.querySelector("#Imagem");
     let categoria = document.querySelector("#Categorias");
     let descricao = document.querySelector("#Descricao");
     let avaliacao = document.querySelector("#Avaliacao");
+    avaliacao.value.replace(",", ".");
 
     let novo = {};
 
