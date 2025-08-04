@@ -1,0 +1,224 @@
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 130px;
+    background-color: rgba(65, 95, 206, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .base-img {
+    width: 250px;
+    display: flex;
+    align-self: center;
+    margin-left: 200px;
+}
+
+header .logo {
+    width: 110px;
+    height: 99px;
+}
+
+header .titulo {
+    display: flex;
+    align-self: center;
+    width: auto;
+    height: auto;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+header .modo {
+    background: rgba(31, 155, 95, 1);
+    display: flex;
+    align-self: center;
+    margin-right: 200px;
+    width: 250px;
+    height: 60px;
+    gap: 21px;
+    border-radius: 24px;
+    padding: 5px 16px;
+}
+
+header .modo img {
+    width: 40px;
+    height: 40px;
+    align-self: center;
+}
+
+header .modo p {
+    color: white;
+    align-self: center;
+    font-weight: 500; 
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0; 
+    margin-bottom: 100px;
+}
+
+main .titulo {
+    font-weight: 600; 
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    text-align: center; 
+    margin-bottom: 30px; 
+}
+
+main .campo{
+    width: 60%; 
+    background-color: rgba(36, 123, 177, 1);
+    border-radius: 12px;
+    padding: 20px 0 0 60px;
+}
+
+main .infos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px; 
+    
+}
+
+input {
+    justify-self: center;
+    width: 80%;
+    height: 30px;
+    border-radius: 12px;
+    border: 0;
+    font-size: 16px;
+    padding: 0 10px; 
+}
+
+.campo {
+    color: rgba(0, 0, 0, 1);
+    line-height: 100%;
+    letter-spacing: -0.2px;
+    margin-left: -60px;
+    margin-bottom: 5px; 
+    font-weight: 500;
+}
+
+#criar{
+    background-color: rgba(31, 155, 95, 1);
+
+    
+    width: 167px;
+    height: 45px;
+    border-radius: 12px;
+    border: 0;
+
+    padding-top: 8px;
+    padding-right: 25px;
+    padding-bottom: 8px;
+    padding-left: 25px;
+
+    gap: 8px;
+    display: flex;
+    justify-self: center;
+
+    margin-top: 50px;
+    margin-left: -75px;
+    margin-bottom: 50px;
+
+    cursor: pointer;
+}
+
+#criar .btn-texto{
+    width: 117px;
+    height: 29px;
+
+    color: white;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.2px;
+
+    margin-top: 0;
+
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    height: 180px;
+    background-color: rgba(252, 247, 248, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+footer .endereco {
+    margin-left: 200px;
+}
+
+footer .infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .titulo {
+    color: rgba(78, 128, 152, 1);
+    width: auto;
+    height: auto;
+    font-weight: 500; 
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 4%;
+}
+
+footer .texto {
+    color: rgba(39, 69, 83, 1);
+    display: flex;
+    width: 301px;
+    height: 92px;
+    font-weight: 400; 
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
+
+footer .contato .texto {
+    width: auto;
+    height: auto;
+}
+
+footer .contato {
+    margin-right: 200px;
+}
+
+footer .links {
+    display: flex;
+    gap: 20px;
+}
+
+footer .copyright {
+    padding: 5px 0;
+    margin: 0;
+    background-color: rgba(65, 95, 206, 1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 5%;
+}
