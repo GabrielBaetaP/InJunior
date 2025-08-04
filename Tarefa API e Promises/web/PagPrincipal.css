@@ -157,6 +157,11 @@ main{
     gap: 8px;
 }
 
+.card-produto .parte-imagem .imagem{
+    width: 450px;
+    height: 500px;
+}
+
 .botoes{
     display: flex;
     justify-content: end;

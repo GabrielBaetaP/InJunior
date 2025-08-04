@@ -58,7 +58,7 @@ function infos(produtos) {
                             </button>
                         </div>
                     </div>
-                    <img src="${produto.image}">
+                    <img class="imagem" src="${produto.image}">
                 </div>
             
                 <div class="informacoes">
